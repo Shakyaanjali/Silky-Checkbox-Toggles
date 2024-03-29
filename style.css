@@ -1,0 +1,74 @@
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: radial-gradient(circle at center center, transparent,rgb(0,0,0)),linear-gradient(322deg, rgba(191, 191, 191,0.05) 0%, rgba(191, 191, 191,0.05) 50%,rgba(100, 100, 100,0.05) 50%, rgba(100, 100, 100,0.05) 100%),linear-gradient(48deg, rgba(43, 43, 43,0.05) 0%, rgba(43, 43, 43,0.05) 50%,rgba(197, 197, 197,0.05) 50%, rgba(197, 197, 197,0.05) 100%),linear-gradient(179deg, rgba(60, 60, 60,0.05) 0%, rgba(60, 60, 60,0.05) 50%,rgba(30, 30, 30,0.05) 50%, rgba(30, 30, 30,0.05) 100%),linear-gradient(294deg, rgba(120, 120, 120,0.05) 0%, rgba(120, 120, 120,0.05) 50%,rgba(96, 96, 96,0.05) 50%, rgba(96, 96, 96,0.05) 100%),linear-gradient(110deg, rgba(145, 145, 145,0.05) 0%, rgba(145, 145, 145,0.05) 50%,rgba(239, 239, 239,0.05) 50%, rgba(239, 239, 239,0.05) 100%),linear-gradient(96deg, rgba(207, 207, 207,0.05) 0%, rgba(207, 207, 207,0.05) 50%,rgba(60, 60, 60,0.05) 50%, rgba(60, 60, 60,0.05) 100%),linear-gradient(248deg, rgba(53, 53, 53,0.05) 0%, rgba(53, 53, 53,0.05) 50%,rgba(233, 233, 233,0.05) 50%, rgba(233, 233, 233,0.05) 100%),linear-gradient(29deg, rgba(117, 117, 117,0.05) 0%, rgba(117, 117, 117,0.05) 50%,rgba(231, 231, 231,0.05) 50%, rgba(231, 231, 231,0.05) 100%),linear-gradient(143deg, rgba(170, 170, 170,0.05) 0%, rgba(170, 170, 170,0.05) 50%,rgba(115, 115, 115,0.05) 50%, rgba(115, 115, 115,0.05) 100%),radial-gradient(circle at center center, hsl(273,80%,64%),hsl(273,80%,64%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d7dbe2;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  flex-direction: column;
+  
+}
+
+h1 {
+  color: #76eaff;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.input-container {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.control-label {
+  background-color: #24252c;
+  background-image: repeating-linear-gradient(0deg, #181a29, #181a29 2px, #202436 2px, #202436 4px);
+  border: 2px solid #575969;
+  border-radius: 4px;
+  display: block;
+  width: 84px;
+  height: 36px;
+  position: relative;
+  transition: border-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+  margin-bottom: 15px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + label {
+  border-color: #00ddff;
+  box-shadow: 0 0 20px 0 #f7f307, inset 0px 0px 12px 0px #23f707;
+}
+input[type=checkbox]:checked + label svg rect {
+  fill: #6bb4f8;
+}
+
+svg rect {
+  fill: #484a57;
+  transition: fill 300ms ease-in-out;
+}
+svg .reference rect {
+  opacity: 0;
+}
